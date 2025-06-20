@@ -8,9 +8,8 @@ const AboutSection: React.FC = () => {
     >
       {/* Left Content */}
       <div className="relative w-full max-w-lg h-[400px] flex items-center justify-center">
-        {/* Center Image */}
         <img
-          src="/src/assets/about.png"
+          src="/assets/about.png"
           alt="Main User"
           className="w-[524px] h-[491px]"
         />
@@ -61,9 +60,8 @@ const AboutSection: React.FC = () => {
             </>,
           ].map((text, idx) => (
             <li key={idx} className="flex items-center text-gray-700">
-              {/* <CheckCircle className="text-green-500 w-5 h-5 mt-1 mr-3" /> */}
               <img
-                src="/src/assets/checkmarkIcon.png"
+                src="/assets/checkmarkIcon.png"
                 alt="Check Tick Mark"
                 className="w-7 h-7 mr-3"
               />

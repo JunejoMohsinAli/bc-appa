@@ -37,8 +37,6 @@ const Navbar: React.FC = () => {
             </a>
           ))}
         </ul>
-
-        {/* Join Now Button */}
         <button className="hidden lg:block bg-[#8670E5] text-white px-8 py-4 rounded-full hover:bg-black transition font-bold w-[150px] h-[57px]">
           Join Now →
         </button>

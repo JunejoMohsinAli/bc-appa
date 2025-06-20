@@ -1,4 +1,3 @@
-// StatsBar.tsx
 import React from "react";
 
 const StatsBar: React.FC = () => {
@@ -13,7 +12,7 @@ const StatsBar: React.FC = () => {
     <div
       className="px-6 py-20 lg:px-20 mx-4 lg:mx-12 my-12 text-white max-w-full md:max-w-[90%] lg:max-w-[1800px] min-h-[320px] rounded-[30px] mt-4 md:mt-6 lg:mt-10 md:py-6 lg:py-10 md:px-4 flex items-center justify-center"
       style={{
-        backgroundImage: `url(/public/assets/statsBackground.png)`,
+        backgroundImage: `url(/assets/statsBackground.png)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

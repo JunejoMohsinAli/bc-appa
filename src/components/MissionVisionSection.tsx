@@ -31,13 +31,14 @@ const MissionVisionSection: React.FC = () => {
           {/* Right Image */}
           <div className="max-w-md w-full">
             <img
-              src="/src/assets/missionTarget.png"
+              src="/assets/missionTarget.png"
               alt="Mission Target"
               className="w-full h-auto"
             />
           </div>
         </div>
       </div>
+      {/* StatsBar Component */}
       <StatsBar />
     </section>
   );

@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
         <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
           <div className="w-full max-w-md">
             <img
-              src="/src/assets/hero.png"
+              src="/assets/hero.png"
               alt="App Screens"
               className="rounded-lg"
             />
