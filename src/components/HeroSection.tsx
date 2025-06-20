@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
             Digital Tracking
           </p>
 
-          <button className="mt-4 bg-[#8670E5] text-white px-8 py-4 rounded-full hover:bg-purple-700 transition font-bold w-[150px] h-[57px]">
+          <button className="mt-4 bg-[#8670E5] text-white px-8 py-4 rounded-full hover:bg-black transition font-bold w-[150px] h-[57px]">
             Join Now →
           </button>
         </div>
