@@ -32,7 +32,7 @@ const HowItWorksSection: React.FC = () => {
     <section
       id="how-it-works"
       aria-label="How BC Appa Works"
-      className="px-6 py-20 lg:px-20 text-[#282c32] relative overflow-hidden"
+      className="text-[#282c32] relative overflow-hidden mt-10 px-6 py-20 lg:px-20 mx-4 lg:mx-12 my-12"
     >
       {/* Header */}
       <div className="text-center mb-20">
