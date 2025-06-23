@@ -35,10 +35,10 @@ const Navbar: React.FC = () => {
       <nav
         role="navigation"
         aria-label="Main navigation"
-        className="container mx-auto px-9 py-6 flex justify-between items-center transition-all duration-300"
+        className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-9 py-6 flex justify-between items-center transition-all duration-300"
       >
         {/* Logo */}
-        <div className="text-4xl font-bold text-[#8670E5]">BC APPA</div>
+        <img src="/assets/logo.png" alt="BC Appa Logo" className="h-12" />
 
         {/* Desktop Nav */}
         <ul className="hidden lg:flex space-x-8 font-bold text-[#282c32]">
@@ -62,6 +62,8 @@ const Navbar: React.FC = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-black focus:outline-none"
+            aria-label="Toggle mobile menu"
+            aria-expanded={isOpen}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -72,12 +74,13 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="lg:hidden bg-white px-6 pt-6 pb-8 shadow-md rounded-b-xl w-full">
           {/* Mobile Nav Links */}
-          <ul className="flex flex-col space-y-4 font-medium text-black text-base">
+          <ul className="flex flex-col space-y-4 font-semibold text-black text-lg">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <a
                   href={link.href}
                   className="block w-full hover:text-[#8670E5] transition"
+                  onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </a>

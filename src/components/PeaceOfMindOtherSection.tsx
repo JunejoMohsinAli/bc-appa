@@ -15,7 +15,10 @@ const PeaceOfMindOtherSection: React.FC = () => {
   ];
 
   return (
-    <section className="px-6 py-20 lg:px-20 bg-white text-[#282c32]">
+    <section
+      className="px-6 py-20 lg:px-20 bg-white text-[#282c32]"
+      aria-label="Peace of Mind Differences Section"
+    >
       {/* Badge + Heading */}
       <div className="text-center mb-16">
         <span
@@ -34,11 +37,13 @@ const PeaceOfMindOtherSection: React.FC = () => {
         {features.map((item, index) => (
           <div
             key={index}
-            className="border rounded-2xl shadow-sm p-6 text-center flex flex-col items-center"
+            className="border rounded-2xl shadow-sm p-6 text-center flex flex-col items-center hover:shadow-md transition duration-300"
           >
-            <img src={item.icon} alt={item.title} className="w-15 h-15 mb-4" />
-            <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-            <p className="text-gray-600 text-lg">{item.desc}</p>
+            <img src={item.icon} alt={item.title} className="w-16 h-16 mb-4" />
+            <h3 className="text-xl sm:text-2xl font-bold mb-2">{item.title}</h3>
+            <p className="text-gray-600 text-base sm:text-lg max-w-[500px] mx-auto">
+              {item.desc}
+            </p>
           </div>
         ))}
       </div>

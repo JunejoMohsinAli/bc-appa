@@ -45,12 +45,12 @@ const BlogSection: React.FC = () => {
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="bg-white border rounded-2xl shadow-sm overflow-hidden"
+            className="bg-white border rounded-2xl shadow-sm overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
           >
             <img
               src={blog.image}
               alt={blog.title}
-              className="w-full h-[220px] object-cover"
+              className="w-full aspect-video object-cover"
             />
             <div className="p-6">
               {/* Category Tag */}
@@ -59,7 +59,11 @@ const BlogSection: React.FC = () => {
               </span>
 
               {/* Title */}
-              <h3 className="font-semibold text-lg mb-4">{blog.title}</h3>
+              <h3 className="font-semibold text-lg mb-4">
+                <a href="#" className="hover:text-[#8670E5] transition">
+                  {blog.title}
+                </a>
+              </h3>
 
               {/* Info */}
               <div className="flex items-center text-sm text-gray-500 gap-4">

@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
               <img
                 src="/assets/appstore.png"
                 alt="App Store"
-                className="w-[120px]"
+                className="w-[120px] hover:scale-105 transition duration-300"
               />
             </a>
             <a
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
               <img
                 src="/assets/playstore.png"
                 alt="Play Store"
-                className="w-[120px]"
+                className="w-[120px] hover:scale-105 transition duration-300"
               />
             </a>
           </div>
@@ -60,25 +60,35 @@ const Footer: React.FC = () => {
           <h3 className="text-lg font-bold mb-4">Pages</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>
-              <a href="#home">Home</a>
+              <a href="#home" className="hover:underline">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <a href="#about" className="hover:underline">
+                About Us
+              </a>
             </li>
             <li>
-              <a href="#features">Integrations</a>
+              <a href="#features" className="hover:underline">
+                Integrations
+              </a>
             </li>
             <li>
-              <a href="#features">Features</a>
+              <a href="#features" className="hover:underline">
+                Features
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact Us</a>
+              <a href="#contact" className="hover:underline">
+                Contact Us
+              </a>
             </li>
           </ul>
         </div>
 
         {/* Right - Contact */}
-        <div className="bg-[#f3f0ff] rounded-xl p-6">
+        <div className="bg-[#f3f0ff] rounded-xl p-6 text-center md:text-left">
           <h4 className="text-sm text-[#8670E5] font-medium mb-1">Address</h4>
           <h3 className="text-lg font-bold mb-2">Ready To Get Started?</h3>
           <p className="text-sm text-gray-600 mb-4">
@@ -105,9 +115,18 @@ const Footer: React.FC = () => {
           Copyright © BC APPA All Rights
         </p>
         <div className="flex gap-4 text-[#8670E5]">
-          <Facebook size={18} className="cursor-pointer hover:text-black" />
-          <Twitter size={18} className="cursor-pointer hover:text-black" />
-          <Linkedin size={18} className="cursor-pointer hover:text-black" />
+          <Facebook
+            size={18}
+            className="transition-transform hover:scale-110 cursor-pointer hover:text-black"
+          />
+          <Twitter
+            size={18}
+            className="transition-transform hover:scale-110 cursor-pointer hover:text-black"
+          />
+          <Linkedin
+            size={18}
+            className="transition-transform hover:scale-110 cursor-pointer hover:text-black"
+          />
         </div>
       </div>
     </footer>

@@ -7,7 +7,7 @@ const MissionVisionSection: React.FC = () => {
       <div className="bg-[#f8f5ff] px-6 py-20 lg:px-20 rounded-[40px] mx-4 lg:mx-12 my-12">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Left Content */}
-          <div className="max-w-xl text-[#282c32]">
+          <div className="max-w-xl text-[#282c32] text-center lg:text-left">
             <span
               style={{ backgroundColor: "#8670E526" }}
               className="inline-block text-[#8670E5] px-3 py-1 rounded-full shadow-sm font-bold text-sm mb-4"
@@ -33,7 +33,7 @@ const MissionVisionSection: React.FC = () => {
             <img
               src="/assets/missionTarget.png"
               alt="Mission Target"
-              className="w-full h-auto"
+              className="w-full h-auto max-h-[400px] mx-auto"
             />
           </div>
         </div>

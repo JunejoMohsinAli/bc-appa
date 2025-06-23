@@ -73,7 +73,9 @@ const FaqSection: React.FC = () => {
 
               {/* Answer */}
               {isOpen && (
-                <p className="text-sm text-gray-600 mt-3">{item.answer}</p>
+                <p className="text-sm text-gray-600 mt-3 transition-all duration-300 ease-in-out">
+                  {item.answer}
+                </p>
               )}
             </div>
           );

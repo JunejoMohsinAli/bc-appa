@@ -61,8 +61,12 @@ const FeaturesSection: React.FC = () => {
                 className="w-12 h-12 mt-1"
               />
               <div>
-                <h3 className="font-bold text-2xl">{item.title}</h3>
-                <p className="text-gray-600 text-base">{item.desc}</p>
+                <h3 className="font-bold text-2xl sm:text-2xl text-balance">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-base sm:text-[15px]">
+                  {item.desc}
+                </p>
               </div>
             </div>
           ))}
@@ -104,7 +108,7 @@ const FeaturesSection: React.FC = () => {
       </div>
 
       {/* Real-Time Feature Below Image */}
-      <div className="flex justify-center mt-16">
+      <div className="flex justify-center mt-16 ">
         <div className="flex gap-4 max-w-md items-center">
           <img
             src={realTimeFeature.icon}

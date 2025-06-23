@@ -5,6 +5,7 @@ const ExploreAppSection: React.FC = () => {
     <section
       id="explore-app"
       className="bg-[#8670E5] py-20 text-white text-center"
+      aria-label="Explore BC App Section"
     >
       {/* Badge and Heading */}
       <div className="mb-12">
@@ -24,7 +25,7 @@ const ExploreAppSection: React.FC = () => {
         <img
           src="/assets/mobileScreen.png"
           alt="Above App"
-          className="absolute z-auto w-[286px]"
+          className="absolute w-[220px] sm:w-[250px] md:w-[286px] z-10"
         />
         {/* Main Image */}
         <img

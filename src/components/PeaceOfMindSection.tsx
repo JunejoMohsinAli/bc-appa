@@ -39,7 +39,7 @@ const PeaceOfMindSection: React.FC = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="bg-white shadow-sm border border-gray-200 rounded-2xl p-6 text-center"
+            className="bg-white shadow-sm border border-gray-200 rounded-2xl p-6 text-center transition-transform duration-300 hover:shadow-md hover:-translate-y-2 sm:p-6 md:p-8"
           >
             <img
               src={item.icon}
@@ -49,7 +49,7 @@ const PeaceOfMindSection: React.FC = () => {
             <h3 className="text-lg font-bold text-[#282c32] mb-2">
               {item.title}
             </h3>
-            <p className="text-gray-600 text-sm">{item.desc}</p>
+            <p className="text-gray-600 text-sm sm:text-base">{item.desc}</p>
           </div>
         ))}
       </div>

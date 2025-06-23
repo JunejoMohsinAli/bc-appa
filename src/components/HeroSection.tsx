@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
       id="home"
       className="pt-20 sm:pt-20 md:pt-16 lg:pt-8 bg-gradient-to-r from-[#f8f5ff] to-[#f1fefc] min-h-screen flex items-center rounded-b-[50px]"
     >
-      <div className="container mx-auto px-6 md:flex justify-between items-center flex flex-col-reverse md:flex-row">
+      <div className="container px-6 md:flex justify-between items-center flex flex-col-reverse md:flex-row w-full sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-20">
         {/* Left Content */}
         <div className="md:w-1/2 space-y-6">
           <span
@@ -19,11 +19,11 @@ const HeroSection: React.FC = () => {
             Connect & Save 🔥
           </span>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-wrap">
             Guaranteed Safety <br /> For Your Savings
           </h1>
 
-          <p className="text-gray-600">
+          <p className="text-sm sm:text-base text-gray-600">
             Join a trusted platform where every Rupee you save is fully
             protected, even if a member defaults. <br />
             <strong>
@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
             </strong>
           </p>
 
-          <p className="text-gray-600">
+          <p className="text-sm sm:text-base text-gray-600">
             🔹 100% Verified Users 🔹 Insurance-Backed Security 🔹 Real-Time
             Digital Tracking
           </p>
@@ -43,13 +43,11 @@ const HeroSection: React.FC = () => {
 
         {/* Right Content */}
         <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-          <div className="w-full max-w-md">
-            <img
-              src="/assets/hero.png"
-              alt="App Screens"
-              className="rounded-lg"
-            />
-          </div>
+          <img
+            src="/assets/hero.png"
+            alt="App Screens"
+            className="rounded-lg w-full max-w-[320px] sm:max-w-md"
+          />
         </div>
       </div>
     </section>

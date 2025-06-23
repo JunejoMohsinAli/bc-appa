@@ -11,7 +11,7 @@ const AboutSection: React.FC = () => {
         <img
           src="/assets/about.png"
           alt="Main User"
-          className="w-[524px] h-[491px]"
+          className="w-full max-w-lg h-auto mb-10 lg:mb-0"
         />
       </div>
 
@@ -24,7 +24,7 @@ const AboutSection: React.FC = () => {
           About Our App 🔥
         </span>
 
-        <h2 className="text-3xl lg:text-4xl font-bold text-[#282c32] mb-4">
+        <h2 className="text-3xl lg:text-4xl font-bold text-[#282c32] mb-4 text-balance">
           🔒 Revolutionizing Savings Circles with 100% Financial Security
         </h2>
 

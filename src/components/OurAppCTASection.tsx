@@ -2,7 +2,7 @@ import React from "react";
 
 const OurAppCTASection: React.FC = () => {
   return (
-    <section className="bg-[#8670E5] rounded-[40px] px-6 py-16 lg:px-20 text-white my-20 overflow-hidden">
+    <section className="bg-[#8670E5] rounded-[40px] px-6 py-12 sm:py-16 lg:px-20 text-white my-20 overflow-hidden">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
         {/* Left Content */}
         <div className="max-w-xl text-center lg:text-left">
@@ -30,12 +30,12 @@ const OurAppCTASection: React.FC = () => {
             <img
               src="/assets/google-play.png"
               alt="Google Play"
-              className="w-[140px] h-auto cursor-pointer"
+              className="w-[140px] h-auto cursor-pointer hover:scale-105 transition duration-300"
             />
             <img
               src="/assets/app-store.png"
               alt="App Store"
-              className="w-[140px] h-auto cursor-pointer"
+              className="w-[140px] h-auto cursor-pointer hover:scale-105 transition duration-300"
             />
           </div>
         </div>

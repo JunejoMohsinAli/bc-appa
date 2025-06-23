@@ -14,6 +14,7 @@ import FaqSection from "./components/FaqSection";
 import OurAppCTASection from "./components/OurAppCTASection";
 import Footer from "./components/Footer";
 import ExploreAppSection from "./components/ExploreAppSection";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const App: React.FC = () => {
   return (
@@ -32,6 +33,7 @@ const App: React.FC = () => {
       <FaqSection />
       <OurAppCTASection />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 };

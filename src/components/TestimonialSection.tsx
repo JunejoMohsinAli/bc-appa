@@ -1,4 +1,5 @@
 import React from "react";
+import { Star } from "lucide-react";
 
 const TestimonialSection: React.FC = () => {
   const testimonials = [
@@ -58,7 +59,7 @@ const TestimonialSection: React.FC = () => {
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-12 h-12 rounded-md object-cover"
+                className="w-14 h-14 lg:w-16 lg:h-16 rounded-md object-cover"
               />
               <div>
                 <h3 className="font-bold text-sm">{item.name}</h3>
@@ -69,14 +70,18 @@ const TestimonialSection: React.FC = () => {
             {/* Stars */}
             <div className="flex gap-1 text-[#fbbf24] text-sm">
               {Array(item.rating)
-                .fill("⭐")
-                .map((star, i) => (
-                  <span key={i}>{star}</span>
+                .fill(0)
+                .map((_, i) => (
+                  <Star
+                    key={i}
+                    size={16}
+                    className="text-yellow-400 fill-yellow-400"
+                  />
                 ))}
             </div>
 
             {/* Quote */}
-            <p className="text-sm text-gray-600 relative">
+            <p className="text-sm text-gray-600 relative pb-4">
               {item.quote}
               <span className="absolute bottom-0 right-0 text-[#8670E5] text-lg">
                 ❞
