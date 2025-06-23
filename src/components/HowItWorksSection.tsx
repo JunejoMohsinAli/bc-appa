@@ -46,7 +46,7 @@ const HowItWorksSection: React.FC = () => {
       </div>
 
       {/* Curve Background */}
-      <div className="relative w-full max-w-[1300px] mx-auto">
+      <div className="relative w-full max-w-[1300px] mx-auto min-h-[320px] sm:min-h-[360px] lg:min-h-[400px]">
         <img
           src="/assets/howitworksLine.png"
           alt="Curve Line"

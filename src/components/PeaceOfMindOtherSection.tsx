@@ -27,7 +27,7 @@ const PeaceOfMindOtherSection: React.FC = () => {
         >
           Peace of Mind 🔥
         </span>
-        <h2 className="text-5xl sm:text-4xl font-bold">
+        <h2 className="text-3xl sm:text-4xl font-bold">
           What Makes BC Appa Different?
         </h2>
       </div>
